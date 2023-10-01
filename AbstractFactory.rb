@@ -75,19 +75,19 @@ class TipoUtilEscolar
   end
 end
 
-class UtilEscolarLapiceros 
+class UtilEscolarLapiceros < TipoUtilEscolar 
   def crearUtilEscolar(precioLapicero,cantidadLapiceros,marcaLapicero)
     Lapicero.new(precioLapicero,cantidadLapiceros,marcaLapicero)
   end
 end
 
-class UtilEscolarLapices
+class UtilEscolarLapices < TipoUtilEscolar
   def crearUtilEscolar(precioLapiz,cantidadLapices,marcaLapiz)
     Lapiz.new(precioLapiz,cantidadLapices,marcaLapiz)
   end
 end
 
-class UtilEscolarCuadernos
+class UtilEscolarCuadernos < TipoUtilEscolar
     def crearUtilEscolar(precioCuaderno,cantidadCuadernos,marcaCuaderno)
       Cuaderno.new(precioCuaderno,cantidadCuadernos,marcaCuaderno)
     end
